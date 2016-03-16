@@ -196,7 +196,7 @@ module.exports = yeoman.generators.Base.extend({
     this.gulp.push('gulp');
     this.npmInstall(this.gulp, { 'saveDev': true });
 
-    if (this.installLaravel || this.installSlim || this.installLumen) {
+    if (this.options.slim || this.options.lumen || this.options.laravel) {
       var done = this.async();
       this.spawnCommand('composer', ['install', '--prefer-dist', '-vvv', '--profile'])
         .on('exit',function (){
