@@ -1,0 +1,37 @@
+@import 'jeet/scss/jeet/index.scss';
+@import 'normalize-scss/_normalize.scss';
+@import 'breakpoint-sass/stylesheets/_breakpoint.scss';
+
+$main-color: #2f6db5;
+$main-color-lighten: #5da3ce;
+
+$second-color: #493f99;
+$second-color-lighten: #7e6cb0;
+
+$third-color: #7bc142;
+$third-color-lighten: #a5d172;
+
+$fourth-color: #f6902b;
+$fourth-color-lighten: #fcbd74;
+
+$text-color: #333;
+
+// Jeet Vars
+$jeet-gutter:       3      !default;
+$jeet-parent-first: false  !default;
+$jeet-max-width:    1180px;
+
+// By Skeleton (mobile-first)
+$mobile: 400px;
+$phablet: 550px;
+$tablet: 750px;
+$desktop: 1000px;
+$desktophd: 1200px;
+
+// Atomic CSS
+@import '_core/*';
+@import 'atoms/*';
+@import 'molecules/*';
+@import 'organisms/*';
+@import 'templates/*';
+@import 'pages/*';

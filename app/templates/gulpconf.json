@@ -1,0 +1,9 @@
+{
+	"sourcePath": "_src/",
+	"publicPath": "public/assets/",
+	"watchers": {
+		"sass/**/*.scss": ["styles"],
+        "img/**/*": ["images"],
+        "js/**/*.js": ["scripts"]
+	}
+}

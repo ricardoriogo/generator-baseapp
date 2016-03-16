@@ -1,0 +1,24 @@
+input, select, textarea {
+	background: #EEE;
+	border: 1px solid #AFAFAF;
+	padding: 5px 10px;
+	width: 100%;
+	display: block;
+}
+
+button, input[type=submit] {
+	font-weight: 900;
+	padding: 5px 20px;
+	border: none;
+
+	&[type=submit] {
+		background: $main-color;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		color: #FFF;
+	}
+}
+
+form .field {
+	margin-bottom: 10px;
+}

@@ -1,0 +1,22 @@
+.portfolio-list {
+	padding-left: 0;
+
+	li {
+		display: inline-block;
+		list-style: none;
+	}
+
+	a {
+		display: block;
+		float: left;
+		border-radius: 50%;
+		padding: 10px;
+		border: 1px solid $main-color;
+		box-shadow: inset 0 0 10px $main-color-lighten;
+	}
+
+	img {
+		border-radius: 50%;
+		display: block;
+	}
+}

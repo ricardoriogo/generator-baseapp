@@ -1,0 +1,28 @@
+.container { 
+	@include center();
+	padding: 0 10px;
+}
+
+@include breakpoint($desktop) {
+	.col3-4 {
+		@include col(3/4);
+	}
+
+	.col1-4 {
+		@include col(1/4);
+	}
+
+	.col1-2 {
+		@include col(1/2);
+	}
+
+	.main-content {
+		@include col(8/12);
+		@include shift(4/12);
+	}
+
+	.side-bar {
+		@include col(3/12);
+		@include shift(-8/12);
+	}
+}

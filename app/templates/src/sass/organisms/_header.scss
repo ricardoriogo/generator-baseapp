@@ -1,0 +1,44 @@
+.site-header {
+	//position: fixed;
+	//top: 0;
+	//left: 0;
+	width: 100%;
+	z-index: 1000;
+	border-width: 8px 0;
+
+	@include breakpoint($phablet) {
+		position: relative;
+	}
+
+	.container {
+		padding: 10px;
+		position: relative;
+
+		@include breakpoint(max-width $phablet) {
+			padding: 10px;
+		}
+	}
+
+	.brand {
+		text-align: center;
+		margin: 20px 0;
+
+		img {
+			max-width: 60%;
+		}
+
+		@include breakpoint($phablet) {
+			margin: 80px 0;
+
+			img {
+				max-width: 100%;
+			}
+		}
+	}
+	
+	.search-form {
+		position: absolute;
+		top: 50px;
+		right: 10px;
+	}
+}

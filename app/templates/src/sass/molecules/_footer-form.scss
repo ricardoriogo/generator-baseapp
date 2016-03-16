@@ -1,0 +1,35 @@
+.site-footer {
+	form {
+		@include center(980px);
+		padding-bottom: 20px;
+	}
+
+	h1 {
+		color: $text-color;
+		font-style: italic;
+		font-weight: 900;
+		line-height: 1em;
+		padding-left: 10px;
+		border-left: 6px solid $main-color;
+	}
+
+	input, textarea {
+		background: #FFF;
+		border-color: #FFF;
+		padding: 10px;
+	}
+
+	textarea {
+		height: 90px;
+	}
+
+	.field {
+		margin-bottom: 10px;
+	}
+
+	[type=submit] {
+		padding: 5px 10px;
+		width: 100%;
+		font-size: 1.5em;
+	}
+}

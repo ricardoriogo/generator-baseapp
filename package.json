@@ -1,0 +1,37 @@
+{
+  "name": "generator-baseapp",
+  "version": "0.0.1",
+  "description": "Yeoman generator",
+  "license": "MIT",
+  "main": "app/index.js",
+  "repository": "ricardoriogo/generator-baseapp",
+  "author": {
+    "name": "Ricardo Riogo",
+    "email": "ricardoriogo@gmail.com",
+    "url": "https://github.com/ricardoriogo"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "app"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "chalk": "^0.5.0",
+    "fs-extra": "^0.26.6",
+    "yeoman-generator": "^0.18.0",
+    "yosay": "^0.3.0"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "peerDependencies": {
+    "yo": ">=1.0.0"
+  }
+}

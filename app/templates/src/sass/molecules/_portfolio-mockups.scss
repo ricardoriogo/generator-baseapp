@@ -1,0 +1,133 @@
+.mock {
+	filter: drop-shadow( 5px 5px 10px rgba(0,0,0,0.6) );
+}
+
+.boxed {
+	filter: drop-shadow( 2px 2px 5px rgba(0,0,0,0.3) );
+	max-width: 96%;
+}
+
+.chrome {
+	&-mock {
+		position: relative;
+		max-width: 900px;
+		max-height: 564px;
+	}
+
+	&-view {
+		position: absolute;
+		top: 19.5%;
+		width: 100%;
+		height: 80.5%;
+		background: #FFF;
+		border-bottom-right-radius: 5px;
+		border-bottom-left-radius: 5px;
+		overflow: hidden;
+
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			max-width: 100%;
+		}
+	}
+
+	&-title,
+	&-nav {
+		position: absolute;
+		font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+		font-size: 100%;
+	}
+
+	&-title {
+		top: 4.2%;
+		left: 3%;
+		max-width: 10%;
+		color: #888;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+
+	&-nav {
+		top: 12.7%;
+		left: 18%;
+		color: #000;
+
+		&::before {
+			content: 'http://www.';
+			color: #AAA;
+		}
+	}
+}
+
+.iphone {
+	&-mock {
+		position: relative;
+		max-width: 250px;
+		max-height: 528px;
+	}
+
+	&-view {
+		position: absolute;
+		top: 11%;
+		left: 4%;
+		width: 91%;
+		height: 77%;
+		background: #FFF;
+		overflow: hidden;
+
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			max-width: 100%;
+		}
+	}
+}
+
+.iphone {
+	&-wrap {
+		width: 30%;
+		max-width: 250px;
+		position: absolute;
+		top: 15%;
+		right: 0%;
+	}
+}
+
+.chrome {
+	&-wrap {
+		@include center(900px);
+		@include breakpoint(0 899px) {
+			max-width: 95%;
+		}
+	}
+}
+
+// animation-name: mob;
+// animation-duration: 4s;
+// animation-delay: 2s;
+// animation-iteration-count: 2;
+
+// @keyframes mob {
+//     0%   {top: 0;}
+//     50%  {top: -3000px;}
+//     100% {top: 0;}
+// }
+
+/*
+<div class="chrome-mock">
+	<img src="chrome-mock.svg" alt="" class="mock">
+	<div class="chrome-title">Google Inc.</div>
+	<div class="chrome-nav">google.com.br</div>
+	<div class="chrome-view">
+		<img src="R2A Engenharia 1.png" alt="">
+	</div>
+</div>
+<div class="iphone-mock">
+	<img src="iphone-mock.svg" alt="" class="mock">
+	<div class="iphone-view">
+		<img src="R2A Engenharia MOB.png" alt="">
+	</div>
+</div>
+*/

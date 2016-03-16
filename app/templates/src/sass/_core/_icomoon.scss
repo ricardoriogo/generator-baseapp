@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'detdef';
+    src: url('../fonts/detdef.eot?dzjsv1');
+    src: url('../fonts/detdef.eot?dzjsv1#iefix') format('embedded-opentype'),
+         url('../fonts/detdef.ttf?dzjsv1') format('truetype'),
+         url('../fonts/detdef.woff?dzjsv1') format('woff'),
+         url('../fonts/detdef.svg?dzjsv1#detdef') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'detdef' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-twitter-square:before {
+    content: "\f081";
+}
+.icon-facebook-square:before {
+    content: "\f082";
+}
+.icon-comments:before {
+    content: "\f086";
+}
+.icon-linkedin-square:before {
+    content: "\f08c";
+}
+.icon-github-square:before {
+    content: "\f092";
+}
+.icon-twitter:before {
+    content: "\f099";
+}
+.icon-facebook:before {
+    content: "\f09a";
+}
+.icon-facebook-f:before {
+    content: "\f09a";
+}
+.icon-github:before {
+    content: "\f09b";
+}
+.icon-feed:before {
+    content: "\f09e";
+}
+.icon-rss:before {
+    content: "\f09e";
+}
+.icon-pinterest:before {
+    content: "\f0d2";
+}
+.icon-pinterest-square:before {
+    content: "\f0d3";
+}
+.icon-google-plus-square:before {
+    content: "\f0d4";
+}
+.icon-google-plus:before {
+    content: "\f0d5";
+}
+.icon-caret-right:before {
+    content: "\f0da";
+}
+.icon-linkedin:before {
+    content: "\f0e1";
+}
+.icon-rss-square:before {
+    content: "\f143";
+}
+.icon-youtube-square:before {
+    content: "\f166";
+}
+.icon-youtube:before {
+    content: "\f167";
+}
+.icon-youtube-play:before {
+    content: "\f16a";
+}
+.icon-instagram:before {
+    content: "\f16d";
+}
+.icon-tumblr:before {
+    content: "\f173";
+}
+.icon-tumblr-square:before {
+    content: "\f174";
+}
+.icon-skype:before {
+    content: "\f17e";
+}
+.icon-vimeo-square:before {
+    content: "\f194";
+}
+.icon-wordpress:before {
+    content: "\f19a";
+}
+.icon-behance:before {
+    content: "\f1b4";
+}
+.icon-behance-square:before {
+    content: "\f1b5";
+}
+.icon-vimeo:before {
+    content: "\f27d";
+}
+

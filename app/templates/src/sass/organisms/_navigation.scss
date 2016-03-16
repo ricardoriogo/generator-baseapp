@@ -1,0 +1,97 @@
+.main-nav {
+	background: #FFF;
+	height: 100vh;
+	width: 80vw;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 1000;
+	transition: transform 0.3s;
+	transform: translateX(80vw);
+
+	/*&::after {
+		content: " ";
+		background: transparent;
+		height: 100vh;
+		margin-top: 70px;
+		width: 100vw;
+		position: absolute;
+		top: 0;
+		left: 0;
+		transform: translateX(100%);
+		transition: background 0.3s;
+	}*/
+
+	.nav-opened & {
+		transform: translateX(0);
+
+		&::after {
+			transform: translateX(-100%);
+			background: rgba(0, 0, 0, 0.8);
+		}
+	}
+
+	@include breakpoint($phablet) {
+		height: auto;
+		position: static;
+		transform: translateX(0);
+		width: 100%;
+	}
+
+	a {
+		font-family: 'Montserrat', sans-serif;
+		font-weight: bold;
+		text-transform: uppercase;
+		color: #6f7073;
+		font-size: 0.9em;
+		letter-spacing: 0.15em;
+
+		&:hover {
+			text-decoration: none;
+			color: $second-color;
+		}
+	}
+
+	.current-menu-item a {
+		color: $main-color;
+	}
+
+	ul {
+		padding-left: 0;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	li {
+		display: block;
+		padding: 8px 0;
+
+		&::after {
+			content: "\2022";
+			color: $main-color;
+			margin: 0 10px;
+		}
+
+		&:last-child::after {
+			content: ""
+		}
+
+		@include breakpoint($phablet) {
+			display: inline-block;
+		}
+	}
+}
+
+
+@include breakpoint(max-width $phablet) {
+	.site-header,
+	.site-footer,
+	.site-content {
+		transform: translateX(0);
+		transition: transform 0.3s;
+	
+		.nav-opened & {
+			transform: translateX(-80vw);
+		}
+	}
+}

@@ -1,0 +1,30 @@
+.home-banner {
+	margin: 20px 0;
+
+	article {
+		position: relative;
+		display: inline-block;
+		margin: 0 10px;
+	}
+
+	a, img {
+		display: block;
+	}
+
+	.mask {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		height: 100%;
+		width: 100%;
+		max-width: 100%;
+	}
+
+	h1 {
+		position: absolute;
+		bottom: 10px;
+		left: 10px;
+		z-index: 200;
+		border-bottom: 0;
+	}
+}
